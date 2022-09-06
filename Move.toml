@@ -1,0 +1,15 @@
+[package]
+# I don't think package name matters much. I think it's used only when you
+# decide to put it somewhere in `[dependencies]`.
+name = 'read_oracle'
+version = '1.0.0'
+
+[addresses]
+switchboard = "0x14611263909398572be034debb2e61b6751cafbeaddd994b9a1250cb76b99d38"
+read_oracle = "63b232cb7ce2b6c4c282f6911599bee304b902298ede4d75d3681782eb639b94"
+
+[dependencies]
+MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/move-stdlib/", rev = "devnet" }
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "devnet" }
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "devnet" }
+Switchboard = { git = "https://github.com/switchboard-xyz/aptos-sdk.git", subdir = "switchboard-move/switchboard/", rev = "main" }
